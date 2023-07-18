@@ -1,0 +1,33 @@
+{
+  "name": "ttf2woff2-esm",
+  "version": "1.0.1",
+  "description": "Convert TTF files to WOFF2 ones.",
+  "main": "lib/index",
+  "module": "lib/index",
+  "engines": {
+    "node": ">=14"
+  },
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nfroidure/ttf2woff2.git"
+  },
+  "keywords": [
+    "ttf",
+    "woff2",
+    "fonts"
+  ],
+  "author": {
+    "name": "Nicolas Froidure",
+    "email": "nicolas.froidure@insertafter.com",
+    "url": "https://insertafter.com/en/index.html"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nfroidure/ttf2woff2/issues"
+  },
+  "homepage": "https://github.com/nfroidure/ttf2woff2",
+  "dependencies": {
+    "buffer": "^6.0.3"
+  }
+}

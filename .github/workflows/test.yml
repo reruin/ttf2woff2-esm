@@ -1,0 +1,18 @@
+on: [push, pull_request]
+name: Run tests
+jobs:
+  test:
+    strategy:
+      matrix:
+        node: [14, 16, 18, 19]
+        os: [macos-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          cache: 'npm'
+      - run: npm i -g npm@latest
+      - run: npm ci
+      - run: npm test
